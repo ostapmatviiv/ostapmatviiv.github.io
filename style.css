@@ -234,3 +234,7 @@ body, input, button {
         .body_sec { 
             margin-left:20px; 
         } 
+.container {
+  max-width: 200px;
+  margin: 20px auto;
+}
