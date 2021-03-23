@@ -4,21 +4,9 @@
 }
 
 html,
-body {
-  font: 100% Helvetica, sans-serif;
-  color: #1b1b1b;
-  min-height: 100% !important;
-  height: 100%;
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
-}
 
 body {
-  background:  #009900;
+  background:  #00bf00;
 }
 
 .header {
