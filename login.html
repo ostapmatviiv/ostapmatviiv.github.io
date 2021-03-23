@@ -3,28 +3,6 @@
 <head> 
     <title>Login</title> 
     <style> 
-        .button_style {
-  background-color: #1c1c1c;
-  color: #e9f3fc;
-  min-width: 5%;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-size: 100%;
-}
-        .login_button {
-  position: relative;
-  float: left;
-  bottom: -85%;
-}
-        .mt-25 {
-  margin-top: 25px !important;
-}
-        .w-40 {
-  width: 40% !important;
-}
-        .w-100 {
-  width: 100% !important;
-}
 
         @import "bourbon";
 
@@ -270,6 +248,17 @@ body, input, button {
     <header> 
         <div class="head1">Аптека 123</div> 
     </header>  
+        <div class="menu"> 
+        <a href="index.html" target="_self" class="link">
+                <h2 class="pl-6">Home</h2>
+              </a> 
+        <a href="page1.html" target="_self" class="link">
+                <h2 class="pl-6">Wish List</h2>
+              </a> 
+                <a href="cart.html" target="_self" class="link">
+                <h2 class="pl-6">Shoping Cart</h2>
+              </a>  
+    </div>
         <div class="login">
   <div class="heading">
     <h2>Sign in</h2>
@@ -285,12 +274,12 @@ body, input, button {
           <input type="password" class="form-control" placeholder="Password">
         </div>
 
-        <div class="w-100 login_button mt-25">
-                    <button type="submit" href="index.html" class="button_style w-100">
+        <div>
+                    <button type="submit" href="index.html" class="false">
                         Submit
                     </button>
-                    <a href="register.html" class="w-40">
-                        <p class="text-center mt-15">Register</p>
+                    <a href="register.html" class="false">
+                        <p class="text-center">Register</p>
                     </a>
                 </div>
        </form>
