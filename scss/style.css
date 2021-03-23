@@ -36,6 +36,7 @@ body {
 
 .header,
 .header_inner_div {
+  background-color: #ffffff;
   height: 11%;
   width: 100%;
 }
@@ -43,13 +44,13 @@ body {
 .name_logo {
   position: relative;
   float: left;
-  color: #e9f3fc;
+  color: #000000;
   text-align: center;
   display: block;
   font-size: 175%;
   font-weight: 800;
   padding: 0.5% 4%;
-  border: #e9f3fc 5px solid;
+  border: #000000 5px solid;
   margin-left: -9px;
 }
 @media screen and (max-height: 500px) and (min-height: 200px) {
