@@ -48,30 +48,27 @@
         <div class="head1">Аптека 123</div> 
     </header> 
       
-    <!-- Menu Navigation Bar -->
-    <div class="menu"> 
-        <a href="index.html" target="_self" class="link">
-                <h2 class="pl-6">Home</h2>
-              </a> 
-        <a href="page1.html" target="_self" class="link">
-                <h2 class="pl-6">Wish List</h2>
-              </a> 
-                <a href="cart.html" target="_self" class="link">
-                <h2 class="pl-6">Shoping Cart</h2>
-              </a>  
-        <div class="menu-log"> 
-            <a href="login.html" target="_self" class="link">LOGIN</a> 
-        </div> 
-    </div> 
-      
-    <!-- Body section -->
-    <div class = "body_sec"> 
-        <section id="Content"> 
-            <h3>Content section</h3> 
-        </section> 
-    </div> 
-      
-    <!-- Footer Section -->
-    <footer>Footer Section</footer> 
+<menu class="menu a">
+    <div class="mb-26 login_form bs-border-box py-28 px-24 bg-grey align-center">
+            <h1 class="mb-30 text-center">Login</h1>
+
+            <form action="index.html" class="w-100 h-90">
+                <label for="email" class="">Email</label>
+                <input type="email" name="email" placeholder="example@email.com"
+                    class="w-100 p-10 bs-border-box mt-15 mb-30" />
+                <label for="password" class="">Password</label>
+                <input type="password" name="password" placeholder="*************"
+                    class="w-100 p-10 bs-border-box my-15" />
+                <div class="w-100 login_button mt-25">
+                    <button type="submit" href="editUser.html" class="button_style w-100">
+                        Submit
+                    </button>
+                    <a href="register.html" class="w-40">
+                        <p class="text-center mt-15">Register</p>
+                    </a>
+                </div>
+            </form>
+        </div>
+</menu>
 </body> 
-</html>    
+</html>  
