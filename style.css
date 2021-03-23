@@ -62,7 +62,7 @@ $button-background-color: #27AE60;
 
         i {
           font-size: 1.5em;
-          color: rgba(255, 255, 0, 0.2);
+          color: rgba(255, 255, 0, 1);
         }
       }
     }
@@ -182,17 +182,15 @@ $button-background-color: #27AE60;
     min-height: 0;
   }
 }
-        .head1 { 
+ .head1 { 
             font-size:40px; 
             color:#009900; 
             font-weight:bold; 
-            text-align: center
         } 
         body { 
             margin: 0 auto; 
             background-position:center; 
             background-size: contain; 
-            background-color:#ebffee
         } 
 
         .menu {    
@@ -218,7 +216,7 @@ $button-background-color: #27AE60;
         } 
         .body_sec { 
             margin-left:20px; 
-        } 
+        }
 .container {
   max-width: 200px;
   margin: 20px auto;
@@ -228,13 +226,13 @@ h2 {
   width: 100%;
   margin: 1em 0 .5em 1.2em;
   padding: 0;
-  color: rgba(255,255,255,.2)
+  color: rgba(122, 122, 122, 1);
 }
 
 a {
   text-decoration: none;
   font-weight: 900;
-  color: #ecf0f1;
+  color: #b5bbbd;
 }
 
 a:hover {
