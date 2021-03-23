@@ -1,8 +1,16 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
-    <title>Page Layout</title> 
+    <title>Login</title> 
     <style> 
+        .login_button {
+  position: relative;
+  float: left;
+  bottom: -85%;
+}
+        .mt-25 {
+  margin-top: 25px !important;
+}
         @import "bourbon";
 
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700);
@@ -262,10 +270,14 @@ body, input, button {
           <input type="password" class="form-control" placeholder="Password">
         </div>
 
-        <button type="submit" href="index.html" class="float">Login</button>
-        <a href="register.html" class="w-40">
+        <div class="w-100 login_button mt-25">
+                    <button type="submit" href="editUser.html" class="button_style w-100">
+                        Submit
+                    </button>
+                    <a href="register.html" class="w-40">
                         <p class="text-center mt-15">Register</p>
                     </a>
+                </div>
        </form>
  		</div>
  </div>
