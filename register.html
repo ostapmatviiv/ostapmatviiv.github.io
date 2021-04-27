@@ -1,17 +1,20 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>Register</title>
+<title>Store</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body id="top">
+    <script src = "register.js">
+
+    </script>
 <div class="wrapper row0">
   <div id="topbar" class="clear"> 
     <nav>
-      <ul><li><a href="register.html">Register</a></li>
-        <li><a href="login.html">Login</a></li>
+      <ul>
+<li><a href="user.html">My Account</a></li>
+        <li><a href="#">Logout</a></li>
       </ul>
     </nav>
   </div>
@@ -36,32 +39,43 @@
     </nav>
   </div>
 </div>
-  
-<body> 
+
  <div class="wrapper row2">
   <div class="rounded">
     <main class="container clear">      
         <div class='container'>
   <h2>or <a href='login.html'>sign in</a></h2>
-  <form action="user.html" class="w-100 h-90">
-<label for="email" class="">Username</label>
+  <form class="w-100 h-90" action="user.html">
+<label class="">Username</label>
                 <input name="username" placeholder="username"
                     class="w-100 p-10 bs-border-box mt-15 mb-30" />
-<label for="email" class="">Email</label>
+<label class="">Email</label>
                 <input type="email" name="email" placeholder="example@email.com"
                     class="w-100 p-10 bs-border-box mt-15 mb-30" />
-<label for="email" class="">Password</label>
-                <input type="password" name="email" placeholder="*************"
+<label class="">Password</label>
+                <input type="password" name="password" placeholder="*************"
                     class="w-100 p-10 bs-border-box mt-15 mb-30" />
-    <input type='submit' value='Register' />
+   <label class="">Status</label>
+    <select id="select">
+        <option  VALUE="0">Select your status</option>
+  <option value="user">User</option>
+  <option value="provisor">Provisor</option>
+</select>
+
+    <input
+                type="button"
+                onclick="sendRequest('POST',login_url , username.value,email.value,password.value)
+                    .then(data=>console.log(data))
+                    .catch(err=>console.log(err))"
+                value="Register"
+              />
   </form>
-<div>
+</div>
     </main>
   </div>
-</div>
-	  <div class="wrapper row4">
+</div><div class="wrapper row4">
   <div class="rounded">
-    <footer id="footer" class="clear"> 
+    <footer id="footer" class="clear">
       <div class="one_third first">
         <figure class="center"><img class="btmspace-15" src="images/demo/worldmap.png" alt="">
           <figcaption><a href="#">Find Us With Google Maps &raquo;</a></figcaption>
@@ -81,18 +95,18 @@
       <div class="one_third">
         <p class="nospace btmspace-10">Stay Up to Date With What's Happening</p>
         <ul class="faico clear">
-          <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a class="faicon-insta" href="#"><i class="fa fa-instagram"></i></i></a></li>
+<li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+<li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="faicon-insta" href="#"><i class="fa fa-instagram"></i></i></a></li>
         </ul>
       </div>
     </footer>
   </div>
 </div>
-<!-- JAVASCRIPTS --> 
-<script src="layout/scripts/jquery.min.js"></script> 
-<script src="layout/scripts/jquery.fitvids.min.js"></script> 
-<script src="layout/scripts/jquery.mobilemenu.js"></script> 
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.fitvids.min.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
 <script src="layout/scripts/tabslet/jquery.tabslet.min.js"></script>
 </body> 
 </html>  

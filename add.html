@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Add Item</title>
+<title>Store</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body id="top">
+    <script src = "add.js"></script>
 <div class="wrapper row0">
   <div id="topbar" class="clear"> 
     <nav>
       <ul>
 <li><a href="user.html">My Account</a></li>
-        <li><a href="#">Logout</a></li>
+        <li><a href="login.html">Logout</a></li>
       </ul>
     </nav>
   </div>
@@ -42,36 +43,27 @@
     <main class="container clear">
 <form action="item.html">
 <div class="row">
-                          <div class="col">
-                            <div class="form-group">
-                              <label>Name</label>
-                              <input class="form-control" placeholder="Name">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col">
-                            <div class="form-group">
-                              <label>Quantity</label>
-                              <input class="form-control" placeholder="Quantity">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col">
-                            <div class="form-group">
-                              <label>Description</span></label>
-                              <input class="form-control" placeholder="Description"></div>
-                          </div>
-                        </div>
-<div class="row">
-                          <div class="col">
-                            <div class="form-group">
-                              <label>Price</span></label>
-                              <input class="form-control" placeholder="Price"></div>
-                          </div>
-                        </div>
-  <button type="submit">Submit</button>
+                        <label class="">Name</label>
+                <input name="Name" placeholder="Name"
+                    class="w-100 p-10 bs-border-box mt-15 mb-30" />
+    <label class="">Quantity</label>
+                <input name="quantity" placeholder="Quantity"
+                    class="w-100 p-10 bs-border-box mt-15 mb-30" />
+    <label class="">Description</label>
+                <input name="description" placeholder="Description"
+                    class="w-100 p-10 bs-border-box mt-15 mb-30" />
+    <label class="">Price</label>
+                <input name="price" placeholder="Price"
+                    class="w-100 p-10 bs-border-box mt-15 mb-30" />
+      <input
+                type="button"
+                class="fadeIn fourth"
+                onclick="sendItem('POST',add_url , {name: Name.value, quantity: quantity.value, price:price.value, describe: description.value})
+                    .then(data=>console.log(data))
+                    .catch(err=>console.log(err))"
+                value="Submit"
+              />
+</div>
 </form>
     </main>
   </div>

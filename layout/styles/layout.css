@@ -497,3 +497,23 @@ form {
     }
   }
 }
+  .gritter-card {
+    background-color: #ffffff;
+    margin: 50px 0;
+    padding: 20px 50px;
+  }
+  
+  .gritter-card .subheader {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+  
+  .avatar {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      vertical-align: middle;
+      background-image: url('./images/demo/avatar.png');
+      background-size: cover;
+      display: inline-block;
+  }
