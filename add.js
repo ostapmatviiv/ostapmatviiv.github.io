@@ -5,7 +5,7 @@ function sendItem(method, url, body = null) {
         console.log(body)
         xhr.open(method, url);
         xhr.responseType = 'json';
-        xhr.setRequestHseader("Accept", "application/json");
+        xhr.setRequestHeader("Accept", "application/json");
         xhr.setRequestHeader("Authorization", 'Basic ' + btoa('Provisor:Pass123'));
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.onload = () => {
